@@ -1,0 +1,31 @@
+{
+  "name": "reactserverexample",
+  "version": "1.1.2",
+  "description": "A very simple implementation of server-side React rendering",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhart/react-server-example.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "server",
+    "server-side"
+  ],
+  "author": "Michael Hart <michael.hart.au@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "literalify": "^0.4.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/mhart/react-server-example/issues"
+  },
+  "homepage": "https://github.com/mhart/react-server-example#readme"
+}
