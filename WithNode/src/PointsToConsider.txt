@@ -1,0 +1,23 @@
+Props
+1. Props is an object and can be passed to component and its children
+2. Props is read only if you need an updatable variable use state
+
+State
+1. If state is changed for any reason, render is called immediately
+2. If render does not use any value of variables, don't use them as state, declare and defice anything but not on state
+3. State value can't be set in constructor without calling super(props)
+4. Direct setStage method is no good on many scenario where prevState value is required to access, it could be asynchronous and expected value may not
+retrieved so use arrow function passing prevState and props
+5. States are local to class or function used on making component
+
+Class
+1. Class method in javascript are not bound automatically for 'this' varibles to work properly it has to be bound
+
+Component Lifecycle
+1. componentDidMount will be execute just after render is executed
+2. One component can make a use of other componets and its children
+
+JSX
+1. Any plain function or constants or class extending react compentn can use used as react componet which should return or render jsx which is JS extension
+looks similar to string literal or template engines but more power than these because of power of JS in jsx
+2. JSX prevents injection attack so its safe for use user input

@@ -12,10 +12,10 @@ var browserify = require("gulp-browserify");
 
 
 gulp.task("build", function() {
-    return gulp.src("src/*.js")
+    return gulp.src("src/**/*.js")
         .pipe(sourcemaps.init())
         .pipe(babel({
-            "presets": ["react"]
+            "presets": ["react", "es2015"]
         }))
         .pipe(concat("all.js"))
         .pipe(browserify(
